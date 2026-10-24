@@ -237,6 +237,70 @@
       </a>
     </section>
 
+    <section class="newsletter section-pad" id="registro">
+      <div class="newsletter-content reveal">
+        <span class="eyebrow">05 / ÚNETE A LA LISTA</span>
+
+        <h2>BE PART OF THE<br /><span>STORY.</span></h2>
+
+        <p>
+          Recibe novedades, anuncios y noticias sobre
+          el universo de GTA VI.
+        </p>
+
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="form-group">
+            <label for="nombre">TU NOMBRE</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="¿Cómo te llamas?"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">CORREO ELECTRÓNICO</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@correo.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="plataforma">TU PLATAFORMA</label>
+            <select id="plataforma" name="plataforma" required>
+              <option value="">Selecciona tu plataforma</option>
+              <option value="PS5">PlayStation 5</option>
+              <option value="Xbox Series X|S">Xbox Series X|S</option>
+            </select>
+          </div>
+
+          <label class="form-consent">
+            <input type="checkbox" id="consentimiento" required />
+            <span>Acepto recibir novedades por correo electrónico.</span>
+          </label>
+
+          <button class="button button-primary" type="submit">
+            QUIERO RECIBIR NOVEDADES <span>↗</span>
+          </button>
+
+          <p class="form-message" id="formMessage" role="status"
+             aria-live="polite"></p>
+          <small>
+            Proyecto de fans no oficial. Consulta la política de privacidad
+            antes de conectar el formulario a un servicio real.
+          </small>
+        </form>
+      </div>
+    </section>
+
     <section class="final-cta">
       <div class="final-glow"></div>
       <div class="final-content reveal">

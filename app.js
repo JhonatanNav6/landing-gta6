@@ -303,3 +303,17 @@ document.addEventListener("DOMContentLoaded", () => {
       `PROYECTO DE FANS NO OFICIAL · ${new Date().getFullYear()}`;
   }
 });
+
+const newsletterForm = document.querySelector("#newsletterForm");
+const formMessage = document.querySelector("#formMessage");
+
+if (newsletterForm && formMessage) {
+  newsletterForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!newsletterForm.reportValidity()) return;
+
+    formMessage.textContent =
+      "Formulario validado. Aún falta conectar el servicio de registro.";
+  });
+}

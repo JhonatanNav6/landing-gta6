@@ -1557,3 +1557,124 @@
       transform: none;
     }
   }
+  
+/* NEWSLETTER — GTA VI */
+.newsletter {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 85% 15%, #69264b55, transparent 42%),
+    #100d17;
+  border-top: 1px solid #ffffff12;
+  border-bottom: 1px solid #ffffff12;
+}
+
+.newsletter-content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 680px);
+  margin-inline: auto;
+}
+
+.newsletter-content h2 {
+  margin: 18px 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: .9;
+  font-weight: 900;
+  color: #fff;
+}
+
+.newsletter-content h2 span {
+  color: #ff76bc;
+}
+
+.newsletter-content > p {
+  color: #c6bdce;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.newsletter-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-group {
+  display: grid;
+  gap: 9px;
+}
+
+.form-group label {
+  color: #f5a3d0;
+  font-size: .75rem;
+  letter-spacing: .12em;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 16px;
+  color: #fff;
+  background: #ffffff08;
+  border: 1px solid #ffffff2b;
+  border-radius: 3px;
+  font: inherit;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.form-group select option {
+  color: #fff;
+  background: #100d17;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ff76bc;
+  box-shadow: 0 0 0 3px #ff76bc20;
+}
+
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #c6bdce;
+  font-size: .85rem;
+  line-height: 1.6;
+}
+
+.form-consent input {
+  margin-top: 4px;
+  accent-color: #ff76bc;
+}
+
+.newsletter-form .button {
+  justify-content: center;
+  cursor: pointer;
+  font: inherit;
+}
+
+.newsletter-form small {
+  color: #9e92a7;
+  font-size: .75rem;
+  line-height: 1.7;
+}
+
+.form-message {
+  min-height: 0;
+  color: #ff91c9;
+  font-size: .9rem;
+}
+
+@media (max-width: 600px) {
+  .newsletter-content h2 {
+    font-size: 3.2rem;
+  }
+
+  .newsletter-form .button {
+    width: 100%;
+  }
+}
