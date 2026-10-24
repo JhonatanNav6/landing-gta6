@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100d17" />
+  <meta
+    name="description"
+    content="Explora Vice City y el estado de Leonida. Descubre a Jason y Lucia en Grand Theft Auto VI."
+  />
+  <title>GTA VI — Welcome to Vice City</title>
+
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="page-loader" aria-hidden="true">
+    <span class="loader-logo">VI</span>
+    <span class="loader-line"></span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a href="#inicio" class="brand" aria-label="GTA VI, inicio">
+      <span class="brand-main">GRAND THEFT AUTO</span>
+      <span class="brand-vi">VI</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="navLinks"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#historia">HISTORIA</a>
+      <a href="#personajes">PERSONAJES</a>
+      <a href="#mundo">LEONIDA</a>
+      <a href="#trailer">TRÁILER</a>
+      <a
+        class="nav-cta"
+        href="https://www.rockstargames.com/VI"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WEB OFICIAL <span>↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-image" role="img"
+        aria-label="Paisaje tropical al atardecer en Vice City"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+
+      <div class="hero-content reveal">
+        <span class="eyebrow">
+          <span class="status-dot"></span>
+          ROCKSTAR GAMES PRESENTA
+        </span>
+
+        <h1 class="hero-title">
+          GRAND THEFT<br />
+          <span>AUTO</span>
+          <strong>VI</strong>
+        </h1>
+
+        <p class="hero-description">
+          El paraíso tiene un precio.
+          <br />
+          Y en Vice City, siempre se paga.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            href="https://www.rockstargames.com/VI"
+            class="button button-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DESCUBRIR GTA VI <span>↗</span>
+          </a>
+          <a href="#trailer" class="button button-outline">
+            <span class="play-icon">▶</span> VER TRÁILER
+          </a>
+        </div>
+
+        <div class="release-note">
+          <span class="release-label">LA ESPERA TERMINA</span>
+          <span class="release-date">19.11.2026</span>
+          <span class="release-platforms">PS5 · XBOX SERIES X|S</span>
+        </div>
+      </div>
+
+      <div class="hero-side-label">VICE CITY, LEONIDA — USA</div>
+      <a class="scroll-indicator" href="#historia">
+        <span>DESLIZA PARA EXPLORAR</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <section class="story section-pad" id="historia">
+      <div class="section-heading reveal">
+        <span class="eyebrow">01 / UNA HISTORIA DE SUPERVIVENCIA</span>
+        <h2>ELLOS CONTRA<br /><span>EL MUNDO.</span></h2>
+      </div>
+
+      <div class="story-layout">
+        <div class="story-image reveal">
+          <img
+            src="assets/hero.jpg"
+            alt="Arte promocional de Grand Theft Auto VI"
+            loading="lazy"
+          />
+          <span class="image-caption">LEONIDA STATE / 001</span>
+        </div>
+
+        <div class="story-copy reveal">
+          <span class="pink-line"></span>
+          <h3>EL SUEÑO AMERICANO<br />TIENE OTRA CARA.</h3>
+          <p>
+            Jason y Lucia saben que las cartas están marcadas.
+            Después de que un golpe aparentemente sencillo salga mal,
+            ambos se ven atrapados en una conspiración criminal que
+            atraviesa todo el estado de Leonida.
+          </p>
+          <p>
+            En un mundo donde confiar en alguien puede costarte todo,
+            solo tienen una certeza: tendrán que apoyarse mutuamente
+            para salir adelante.
+          </p>
+          <a
+            class="text-link"
+            href="https://www.rockstargames.com/VI"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            EXPLORAR EL UNIVERSO <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="characters" id="personajes">
+      <div class="section-heading section-pad reveal">
+        <span class="eyebrow">02 / LOS PROTAGONISTAS</span>
+        <h2>DOS VIDAS.<br /><span>UN MISMO DESTINO.</span></h2>
+      </div>
+
+      <div class="character-grid">
+        <article class="character-card lucia reveal">
+          <img src="assets/lucia.jpg" alt="Lucia Caminos" loading="lazy" />
+          <div class="character-gradient"></div>
+          <div class="character-info">
+            <span class="character-number">01 — LA SUPERVIVIENTE</span>
+            <h3>LUCIA<br /><span>CAMINOS</span></h3>
+            <p>La libertad nunca fue gratis.</p>
+          </div>
+        </article>
+
+        <article class="character-card jason reveal">
+          <img src="assets/jason.jpg" alt="Jason Duval" loading="lazy" />
+          <div class="character-gradient"></div>
+          <div class="character-info">
+            <span class="character-number">02 — EL ESTRATEGA</span>
+            <h3>JASON<br /><span>DUVAL</span></h3>
+            <p>Hay trabajos de los que no se sale.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="world section-pad" id="mundo">
+      <div class="world-background"></div>
+      <div class="world-content reveal">
+        <span class="eyebrow">03 / BIENVENIDO A LEONIDA</span>
+        <h2>EL PARAÍSO<br />NO ES <span>LO QUE PARECE.</span></h2>
+        <p>
+          Luces de neón, carreteras interminables, costas tropicales
+          y secretos ocultos bajo el sol. Descubre un mundo inspirado
+          en los contrastes del sur de Estados Unidos.
+        </p>
+        <a
+          href="https://www.rockstargames.com/VI"
+          class="button button-light"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          EXPLORAR EL MUNDO <span>↗</span>
+        </a>
+      </div>
+
+      <div class="world-index">
+        <span>VICE CITY</span>
+        <span>LEONIDA KEYS</span>
+        <span>PORT GELLHORN</span>
+      </div>
+    </section>
+
+    <section class="trailer section-pad" id="trailer">
+      <div class="section-heading reveal">
+        <span class="eyebrow">04 / MATERIAL OFICIAL</span>
+        <h2>LA HISTORIA<br /><span>CONTINÚA.</span></h2>
+      </div>
+
+      <a
+        class="trailer-card reveal"
+        href="https://www.rockstargames.com/VI"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ver tráiler oficial de GTA VI en Rockstar Games"
+      >
+        <div class="trailer-art">
+          <div class="trailer-play">▶</div>
+          <div class="trailer-caption">
+            <span>ROCKSTAR GAMES</span>
+            <h3>GRAND THEFT AUTO VI</h3>
+            <p>TRÁILER DE LANZAMIENTO · 2026</p>
+          </div>
+        </div>
+        <span class="trailer-link">VER EN LA WEB OFICIAL ↗</span>
+      </a>
+    </section>
+
+    <section class="final-cta">
+      <div class="final-glow"></div>
+      <div class="final-content reveal">
+        <span class="eyebrow">EL PRÓXIMO CAPÍTULO ESTÁ CERCA</span>
+        <h2>SEE YOU<br /><span>IN VICE CITY.</span></h2>
+        <p>19 DE NOVIEMBRE DE 2026</p>
+        <a
+          href="https://www.rockstargames.com/VI"
+          class="button button-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VISITAR ROCKSTAR GAMES <span>↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="footer-logo">GTA <span>VI</span></a>
+    <p>PROYECTO DE FANS NO OFICIAL · 2026</p>
+    <a href="https://www.rockstargames.com/VI"
+      target="_blank" rel="noopener noreferrer">
+      ROCKSTAR GAMES ↗
+    </a>
+  </footer>
+</body>
+</html>
