@@ -303,3 +303,47 @@ document.addEventListener("DOMContentLoaded", () => {
       `PROYECTO DE FANS NO OFICIAL · ${new Date().getFullYear()}`;
   }
 });
+
+
+
+  /* COMMUNITY FORM */
+
+  const communityForm = document.getElementById("communityForm");
+
+  if (communityForm) {
+    communityForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = document
+        .getElementById("communityName")
+        .value.trim();
+
+      const email = document
+        .getElementById("communityEmail")
+        .value.trim();
+
+      const platform = document
+        .getElementById("communityPlatform")
+        .value;
+
+      const consent = document
+        .getElementById("communityConsent").checked;
+
+      const message = document.getElementById("communityMessage");
+
+      if (name.length < 2 || !email || !platform || !consent) {
+        message.textContent =
+          "Completa todos los campos y acepta las condiciones.";
+        message.className = "community-message error";
+        return;
+      }
+
+      message.textContent =
+        `¡Gracias, ${name}! El formulario de demostración ` +
+        `se completó para ${platform}.`;
+
+      message.className = "community-message success";
+
+      communityForm.reset();
+    });
+  }

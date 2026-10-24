@@ -237,6 +237,69 @@
       </a>
     </section>
 
+
+    <!-- 05 / FORMULARIO DE NOVEDADES -->
+    <section class="community section-pad" id="comunidad">
+      <div class="community-content reveal">
+        <span class="eyebrow">05 / ÚNETE A LA COMUNIDAD</span>
+        <h2>EL PRÓXIMO CAPÍTULO<br /><span>COMIENZA AQUÍ.</span></h2>
+
+        <p>
+          Déjanos tus datos y cuéntanos en qué plataforma
+          te gustaría disfrutar GTA VI.
+        </p>
+
+        <form id="communityForm" class="community-form">
+          <div class="community-field">
+            <label for="communityName">Nombre</label>
+            <input
+              type="text"
+              id="communityName"
+              name="nombre"
+              placeholder="Tu nombre"
+              minlength="2"
+              required
+            />
+          </div>
+
+          <div class="community-field">
+            <label for="communityEmail">Correo electrónico</label>
+            <input
+              type="email"
+              id="communityEmail"
+              name="email"
+              placeholder="correo@ejemplo.com"
+              required
+            />
+          </div>
+
+          <div class="community-field">
+            <label for="communityPlatform">Plataforma preferida</label>
+            <select id="communityPlatform" name="plataforma" required>
+              <option value="">Selecciona una plataforma</option>
+              <option value="PlayStation 5">PlayStation 5</option>
+              <option value="Xbox Series X|S">Xbox Series X|S</option>
+              <option value="PC">PC</option>
+            </select>
+          </div>
+
+          <label class="community-consent">
+            <input type="checkbox" id="communityConsent" required />
+            <span>Acepto el uso de mis datos para esta demostración.</span>
+          </label>
+
+          <button type="submit" class="button button-primary">
+            ENVIAR REGISTRO →
+          </button>
+
+          <p id="communityMessage"
+             class="community-message"
+             role="status"
+             aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
     <section class="final-cta">
       <div class="final-glow"></div>
       <div class="final-content reveal">

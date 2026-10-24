@@ -1557,3 +1557,111 @@
       transform: none;
     }
   }
+
+ 
+/*  FORMULARIO DE COMUNIDAD GTA VI */
+
+.community {
+  background: linear-gradient(135deg, #181320, #29182d);
+}
+
+.community-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.community-content h2 {
+  margin: 18px 0;
+  font-family: var(--font-display);
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.05;
+}
+
+.community-content h2 span {
+  color: var(--pink);
+}
+
+.community-content > p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.community-form {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.community-field {
+  display: grid;
+  gap: 9px;
+}
+
+.community-field label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.community-field input,
+.community-field select {
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 15px;
+  color: var(--white);
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  font: inherit;
+}
+
+.community-field input:focus,
+.community-field select:focus {
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
+}
+
+.community-field select option {
+  color: #fff;
+  background: #211829;
+}
+
+.community-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.community-consent input {
+  margin-top: 4px;
+  accent-color: var(--pink);
+}
+
+.community-form .button {
+  justify-content: center;
+  cursor: pointer;
+}
+
+.community-message {
+  min-height: 24px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.community-message.success {
+  color: #83f5b1;
+}
+
+.community-message.error {
+  color: #ff9eac;
+}
+
+@media (max-width: 600px) {
+  .community-content h2 {
+    font-size: 38px;
+  }
+}
+ 
