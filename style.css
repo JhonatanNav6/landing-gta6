@@ -1557,124 +1557,111 @@
       transform: none;
     }
   }
-  
-/* NEWSLETTER — GTA VI */
-.newsletter {
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(ellipse at 85% 15%, #69264b55, transparent 42%),
-    #100d17;
-  border-top: 1px solid #ffffff12;
-  border-bottom: 1px solid #ffffff12;
+
+ 
+/*  FORMULARIO DE COMUNIDAD GTA VI */
+
+.community {
+  background: linear-gradient(135deg, #181320, #29182d);
 }
 
-.newsletter-content {
-  position: relative;
-  z-index: 1;
-  width: min(100%, 680px);
-  margin-inline: auto;
+.community-content {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-.newsletter-content h2 {
+.community-content h2 {
   margin: 18px 0;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  line-height: .9;
-  font-weight: 900;
-  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.05;
 }
 
-.newsletter-content h2 span {
-  color: #ff76bc;
+.community-content h2 span {
+  color: var(--pink);
 }
 
-.newsletter-content > p {
-  color: #c6bdce;
+.community-content > p {
+  color: var(--muted);
   line-height: 1.8;
-  margin-bottom: 32px;
 }
 
-.newsletter-form {
+.community-form {
   display: grid;
   gap: 20px;
+  margin-top: 30px;
 }
 
-.form-group {
+.community-field {
   display: grid;
   gap: 9px;
 }
 
-.form-group label {
-  color: #f5a3d0;
-  font-size: .75rem;
-  letter-spacing: .12em;
+.community-field label {
+  font-size: 13px;
   font-weight: 700;
 }
 
-.form-group input,
-.form-group select {
+.community-field input,
+.community-field select {
   width: 100%;
-  min-height: 52px;
-  padding: 14px 16px;
-  color: #fff;
-  background: #ffffff08;
-  border: 1px solid #ffffff2b;
-  border-radius: 3px;
+  min-height: 50px;
+  padding: 13px 15px;
+  color: var(--white);
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
   font: inherit;
-  outline: none;
-  transition: border-color .2s, box-shadow .2s;
 }
 
-.form-group select option {
+.community-field input:focus,
+.community-field select:focus {
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
+}
+
+.community-field select option {
   color: #fff;
-  background: #100d17;
+  background: #211829;
 }
 
-.form-group input:focus,
-.form-group select:focus {
-  border-color: #ff76bc;
-  box-shadow: 0 0 0 3px #ff76bc20;
-}
-
-.form-consent {
+.community-consent {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  color: #c6bdce;
-  font-size: .85rem;
+  color: var(--muted);
+  font-size: 12px;
   line-height: 1.6;
 }
 
-.form-consent input {
+.community-consent input {
   margin-top: 4px;
-  accent-color: #ff76bc;
+  accent-color: var(--pink);
 }
 
-.newsletter-form .button {
+.community-form .button {
   justify-content: center;
   cursor: pointer;
-  font: inherit;
 }
 
-.newsletter-form small {
-  color: #9e92a7;
-  font-size: .75rem;
-  line-height: 1.7;
+.community-message {
+  min-height: 24px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-.form-message {
-  min-height: 0;
-  color: #ff91c9;
-  font-size: .9rem;
+.community-message.success {
+  color: #83f5b1;
+}
+
+.community-message.error {
+  color: #ff9eac;
 }
 
 @media (max-width: 600px) {
-  .newsletter-content h2 {
-    font-size: 3.2rem;
-  }
-
-  .newsletter-form .button {
-    width: 100%;
+  .community-content h2 {
+    font-size: 38px;
   }
 }
+ 

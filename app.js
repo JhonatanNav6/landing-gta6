@@ -304,16 +304,67 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-const newsletterForm = document.querySelector("#newsletterForm");
-const formMessage = document.querySelector("#formMessage");
 
-if (newsletterForm && formMessage) {
-  newsletterForm.addEventListener("submit", (event) => {
-    event.preventDefault();
+  /* -----------------------------------------
+     YEAR IN FOOTER
+  ----------------------------------------- */
 
-    if (!newsletterForm.reportValidity()) return;
+  const footerText = document.querySelector(".footer p");
 
-    formMessage.textContent =
-      "Formulario validado. Aún falta conectar el servicio de registro.";
-  });
-}
+  if (footerText) {
+    footerText.textContent =
+      `PROYECTO DE FANS NO OFICIAL · ${new Date().getFullYear()}`;
+  }
+
+  /* -----------------------------------------
+     COMMUNITY FORM
+  ----------------------------------------- */
+
+  const communityForm = document.getElementById("communityForm");
+
+  if (communityForm) {
+    communityForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById("communityName")?.value.trim();
+      const email = document.getElementById("communityEmail")?.value.trim();
+      const platform = document.getElementById("communityPlatform")?.value;
+      const consent = document.getElementById("communityConsent")?.checked;
+      const message = document.getElementById("communityMessage");
+
+      if (!message) return;
+
+      if (!name || name.length < 2 || !email || !platform || !consent) {
+        message.textContent =
+          "Completa todos los campos y acepta las condiciones.";
+        message.className = "community-message error";
+        return;
+      }
+
+      message.textContent =
+        `¡Gracias, ${name}! El formulario de demostración se completó para ${platform}.`;
+
+      message.className = "community-message success";
+      communityForm.reset();
+    });
+  }
+
+  /* -----------------------------------------
+     NEWSLETTER FORM
+  ----------------------------------------- */
+
+  const newsletterForm = document.querySelector("#newsletterForm");
+  const formMessage = document.querySelector("#formMessage");
+
+  if (newsletterForm && formMessage) {
+    newsletterForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!newsletterForm.reportValidity()) return;
+
+      formMessage.textContent =
+        "Formulario validado. Aún falta conectar el servicio de registro.";
+    });
+  }
+});
+
